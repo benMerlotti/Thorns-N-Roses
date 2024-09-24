@@ -1,9 +1,9 @@
-import { Authorized } from "../components/views/Authorized";  // Adjust import path as needed
-import { Login } from "../components/auth/Login";  // Adjust import path as needed
-import { Register } from "../components/auth/Register";  // Adjust import path as needed
+import { Authorized } from "./components/views/Authorized";  // Adjust import path as needed
+import { Login } from "./components/auth/Login";  // Adjust import path as needed
+import { Register } from "./components/auth/Register";  // Adjust import path as needed
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import {ApplicationViews} from "../components/views/ApplicationViews"
+import {ApplicationViews} from "./components/views/ApplicationViews"
 
 export const App = () => {
   const [currentUser, setCurrentUser] = useState(null);
