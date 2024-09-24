@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Distributor } from "./Distributor";
-import { getAllDistributors } from "../../services/distributorServices";
+import { getAllDistributors } from "../../../services/distributorServices";
 
 export const DistributorsList = () => {
   const [distributors, setDistributors] = useState([]);

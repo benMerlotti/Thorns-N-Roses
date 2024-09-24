@@ -4,7 +4,7 @@ import { getNurseryFlowers } from "../nurseries/NurseriesService";
 import {
   getAllDistributorsNurseries,
   getAllDistributors,
-} from "../../services/distributorServices";
+} from "../../../services/distributorServices";
 
 export const Retail = ({ retailer }) => {
   const [distributorNurseries, setDistributorNurseries] = useState([]);
