@@ -1,0 +1,60 @@
+.distributor {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .distributor-name {
+    font-size: 1.5em; /* Larger font size for distributor name */
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the name */
+    margin-bottom: 12px; /* Space below the header */
+  }
+  
+  .distributor-flowers {
+    display: flex;
+    flex-wrap: wrap; /* Wrap flowers in a row */
+    gap: 16px; /* Space between flower items */
+  }
+  
+  .distributor-flower {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #fff; /* White background for flowers */
+    width: calc(30% - 16px); /* Three flowers per row with space */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for flower items */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .distributor-flower:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  .distributor-flower div {
+    margin-bottom: 8px; /* Space between flower details */
+  }
+
+  .retailers {
+    display: flex;
+    align-items: center;
+  }
+  
+  .retailers h3 {
+    color: #2980b9;
+    padding-right: 15px;
+  }
+  
+  .retailer-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .retailer-list-item {
+    padding-right: 10px;
+    color: #34495e;
+  }
