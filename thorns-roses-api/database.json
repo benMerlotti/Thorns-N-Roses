@@ -1,105 +1,62 @@
 {
-    "flowers": [
-      {"id": 1, "color": "pink", "species": "Rose"},
-      {"id": 2, "color": "yellow", "species": "Orchid"},
-      {"id": 3, "color": "pink", "species": "Lily"},
-      {"id": 4, "color": "pink", "species": "Orchid"},
-      {"id": 5, "color": "blue", "species": "Lily"},
-      {"id": 6, "color": "red", "species": "Daisy"},
-      {"id": 7, "color": "pink", "species": "Rose"},
-      {"id": 8, "color": "yellow", "species": "Tulip"},
-      {"id": 9, "color": "pink", "species": "Tulip"},
-      {"id": 10, "color": "pink", "species": "Rose"},
-      {"id": 11, "color": "blue", "species": "Lily"},
-      {"id": 12, "color": "pink", "species": "Daisy"},
-      {"id": 13, "color": "yellow", "species": "Daisy"},
-      {"id": 14, "color": "blue", "species": "Lily"},
-      {"id": 15, "color": "white", "species": "Rose"},
-      {"id": 16, "color": "yellow", "species": "Lily"},
-      {"id": 17, "color": "pink", "species": "Orchid"},
-      {"id": 18, "color": "pink", "species": "Orchid"},
-      {"id": 19, "color": "white", "species": "Lily"},
-      {"id": 20, "color": "blue", "species": "Rose"}
-    ],
-    "nurseries": [
-        {"id": 1, "businessName": "Green Thumb Gardens"},
-        {"id": 2, "businessName": "Sprout & Bloom Nursery"},
-        {"id": 3, "businessName": "Little Seedlings Co."},
-        {"id": 4, "businessName": "Sunshine Grove"},
-        {"id": 5, "businessName": "Evergreen Wonders"},
-        {"id": 6, "businessName": "Petal & Fern Plant Haven"}
-    ],
-    "distributors": [
-      {"id": 1, "businessName": "Bloom Logistics", "flowerPriceMarkup": 1.10},
-      {"id": 2, "businessName": "Blossom Distributors", "flowerPriceMarkup": 1.10},
-      {"id": 3, "businessName": "Floral Express", "flowerPriceMarkup": 1.10}
-    ],
-    "retailers": [
-        {
-            "id": 1,
-            "businessName": "Petal Boutique",
-            "address": "1 Bloom St.",
-            "distributorId": 1,
-            "markupPercentage": 1.15
-          },
-          {
-            "id": 2,
-            "businessName": "Floral Haven",
-            "address": "2 Bloom St.",
-            "distributorId": 3,
-            "markupPercentage": 1.15
-          },
-          {
-            "id": 3,
-            "businessName": "Bloom & Blossom",
-            "address": "3 Bloom St.",
-            "distributorId": 2,
-            "markupPercentage": 1.15
-          },
-          {
-            "id": 4,
-            "businessName": "Garden Glow",
-            "address": "4 Bloom St.",
-            "distributorId": 3,
-            "markupPercentage": 1.15
-          },
-          {
-            "id": 5,
-            "businessName": "Flora & Fern",
-            "address": "5 Bloom St.",
-            "distributorId": 1,
-            "markupPercentage": 1.15
-          }
-    ],
-    "nurseryFlowers": [
-        {"nurseryId": 1, "flowerId": 10, "price": 4.50},
-        {"nurseryId": 1, "flowerId": 2, "price": 6.00},
-        {"nurseryId": 1, "flowerId": 15, "price": 9.00},
-        {"nurseryId": 2, "flowerId": 9, "price": 7.50},
-        {"nurseryId": 2, "flowerId": 4, "price": 5.00},
-        {"nurseryId": 2, "flowerId": 13, "price": 8.50},
-        {"nurseryId": 3, "flowerId": 8, "price": 3.50},
-        {"nurseryId": 3, "flowerId": 5, "price": 7.00},
-        {"nurseryId": 3, "flowerId": 19, "price": 9.50},
-        {"nurseryId": 4, "flowerId": 7, "price": 6.25},
-        {"nurseryId": 4, "flowerId": 12, "price": 4.75},
-        {"nurseryId": 4, "flowerId": 3, "price": 9.25},
-        {"nurseryId": 5, "flowerId": 6, "price": 5.50},
-        {"nurseryId": 5, "flowerId": 16, "price": 7.25},
-        {"nurseryId": 5, "flowerId": 20, "price": 8.00},
-        {"nurseryId": 6, "flowerId": 5, "price": 4.00},
-        {"nurseryId": 6, "flowerId": 11, "price": 9.00},
-        {"nurseryId": 6, "flowerId": 14, "price": 6.50}
-    ],
-    "distributorNurseries": [
-    {"distributorId": 1, "nurseryId": 1},
-    {"distributorId": 1, "nurseryId": 2},
-    {"distributorId": 1, "nurseryId": 3},
-    {"distributorId": 2, "nurseryId": 2},
-    {"distributorId": 2, "nurseryId": 4},
-    {"distributorId": 3, "nurseryId": 1},
-    {"distributorId": 3, "nurseryId": 5},
-    {"distributorId": 3, "nurseryId": 6}
-]
-  }
-  
+  "flowers": [
+    {"id": 1, "color": "pink", "species": "Rose"}, {"id": 2, "color": "yellow", "species": "Orchid"}, {"id": 3, "color": "pink", "species": "Lily"},
+    {"id": 4, "color": "pink", "species": "Orchid"}, {"id": 5, "color": "blue", "species": "Lily"}, {"id": 6, "color": "red", "species": "Daisy"},
+    {"id": 7, "color": "pink", "species": "Rose"}, {"id": 8, "color": "yellow", "species": "Tulip"}, {"id": 9, "color": "pink", "species": "Tulip"},
+    {"id": 10, "color": "pink", "species": "Rose"}, {"id": 11, "color": "blue", "species": "Lily"}, {"id": 12, "color": "pink", "species": "Daisy"},
+    {"id": 13, "color": "yellow", "species": "Daisy"}, {"id": 14, "color": "blue", "species": "Lily"}, {"id": 15, "color": "white", "species": "Rose"},
+    {"id": 16, "color": "yellow", "species": "Lily"}, {"id": 17, "color": "pink", "species": "Orchid"}, {"id": 18, "color": "pink", "species": "Orchid"},
+    {"id": 19, "color": "white", "species": "Lily"}, {"id": 20, "color": "blue", "species": "Rose"}
+  ],
+  "nurseries": [
+    {"id": 1, "businessName": "Green Thumb Gardens"}, {"id": 2, "businessName": "Sprout & Bloom Nursery"},
+    {"id": 3, "businessName": "Little Seedlings Co."}, {"id": 4, "businessName": "Sunshine Grove"},
+    {"id": 5, "businessName": "Evergreen Wonders"}, {"id": 6, "businessName": "Petal & Fern Plant Haven"}
+  ],
+  "distributors": [
+    {"id": 1, "businessName": "Bloom Logistics", "flowerPriceMarkup": 1.10},
+    {"id": 2, "businessName": "Blossom Distributors", "flowerPriceMarkup": 1.10},
+    {"id": 3, "businessName": "Floral Express", "flowerPriceMarkup": 1.10}
+  ],
+  "retailers": [
+    {"id": 1, "businessName": "Petal Boutique", "address": "1 Bloom St.", "distributorId": 1, "markupPercentage": 1.15},
+    {"id": 2, "businessName": "Floral Haven", "address": "2 Bloom St.", "distributorId": 3, "markupPercentage": 1.15},
+    {"id": 3, "businessName": "Bloom & Blossom", "address": "3 Bloom St.", "distributorId": 2, "markupPercentage": 1.15},
+    {"id": 4, "businessName": "Garden Glow", "address": "4 Bloom St.", "distributorId": 3, "markupPercentage": 1.15},
+    {"id": 5, "businessName": "Flora & Fern", "address": "5 Bloom St.", "distributorId": 1, "markupPercentage": 1.15}
+  ],
+  "nurseryFlowers": [
+    {"nurseryId": 1, "flowerId": 10, "price": 4.50}, {"nurseryId": 1, "flowerId": 2, "price": 6.00}, 
+    {"nurseryId": 1, "flowerId": 15, "price": 9.00}, {"nurseryId": 2, "flowerId": 9, "price": 7.50},
+    {"nurseryId": 2, "flowerId": 4, "price": 5.00}, {"nurseryId": 2, "flowerId": 13, "price": 8.50},
+    {"nurseryId": 3, "flowerId": 8, "price": 3.50}, {"nurseryId": 3, "flowerId": 5, "price": 7.00},
+    {"nurseryId": 3, "flowerId": 19, "price": 9.50}, {"nurseryId": 4, "flowerId": 7, "price": 6.25},
+    {"nurseryId": 4, "flowerId": 12, "price": 4.75}, {"nurseryId": 4, "flowerId": 3, "price": 9.25},
+    {"nurseryId": 5, "flowerId": 6, "price": 5.50}, {"nurseryId": 5, "flowerId": 16, "price": 7.25},
+    {"nurseryId": 5, "flowerId": 20, "price": 8.00}, {"nurseryId": 6, "flowerId": 5, "price": 4.00},
+    {"nurseryId": 6, "flowerId": 11, "price": 9.00}, {"nurseryId": 6, "flowerId": 14, "price": 6.50}
+  ],
+  "distributorNurseries": [
+    {"distributorId": 1, "nurseryId": 1}, {"distributorId": 1, "nurseryId": 2}, {"distributorId": 1, "nurseryId": 3},
+    {"distributorId": 2, "nurseryId": 2}, {"distributorId": 2, "nurseryId": 4}, {"distributorId": 3, "nurseryId": 1},
+    {"distributorId": 3, "nurseryId": 5}, {"distributorId": 3, "nurseryId": 6}
+  ],
+  "customers": [
+    {"id": 1, "name": "Alice", "businessName": "Wonder Weddings", "email": "alice@example.com", "password": "hashedpassword"},
+    {"id": 2, "name": "Bob", "businessName": "Floral Dreams", "email": "bob@example.com", "password": "hashedpassword"},
+    {"id": 3, "name": "Charlie", "businessName": "Wedding Bliss", "email": "charlie@example.com", "password": "hashedpassword"},
+    {"id": 4, "name": "Dana", "businessName": "Ever After Events", "email": "dana@example.com", "password": "hashedpassword"},
+    {"id": 5, "name": "Eve", "businessName": "Romantic Roses", "email": "eve@example.com", "password": "hashedpassword"},
+    {"id": 6, "name": "Frank", "businessName": "Celebration Creations", "email": "frank@example.com", "password": "hashedpassword"},
+    {"id": 7, "name": "Grace", "businessName": "Perfect Petals", "email": "grace@example.com", "password": "hashedpassword"},
+    {"id": 8, "name": "Hank", "businessName": "Dream Weddings", "email": "hank@example.com", "password": "hashedpassword"},
+    {"id": 9, "name": "Ivy", "businessName": "Wedding Wonders", "email": "ivy@example.com", "password": "hashedpassword"},
+    {"id": 10, "name": "Jack", "businessName": "Beautiful Bouquets", "email": "jack@example.com", "password": "hashedpassword"},
+    {"id": 11, "name": "Karen", "businessName": "Floral Fantasies", "email": "karen@example.com", "password": "hashedpassword"},
+    {"id": 12, "name": "Leo", "businessName": "Petals and Parties", "email": "leo@example.com", "password": "hashedpassword"},
+    {"id": 13, "name": "Mia", "businessName": "Enchanting Events", "email": "mia@example.com", "password": "hashedpassword"},
+    {"id": 14, "name": "Nina", "businessName": "Blissful Bouquets", "email": "nina@example.com", "password": "hashedpassword"},
+    {"id": 15, "name": "Oscar", "businessName": "Perfect Weddings", "email": "oscar@example.com", "password": "hashedpassword"},
+    {"id": 16, "name": "simrath", "businessName": "simrathbusiness", "email": "srand1250@gmail.com", "password": "password"}
+  ]
+}
