@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { getAllRetailers } from "../../services/reatailerServices";
+import { getAllRetailers } from "../../services/retailerServices";
 import { Retail } from "./Retailer";
 
-export const RetailerList = () => {
+export const RetailerList = ({ passFunction }) => {
   const [allRetailers, setAllRetailers] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,13 @@ export const RetailerList = () => {
       <h2>Retailers</h2>
       <article>
         {allRetailers.map((retailerObj) => {
-          return <Retail retailer={retailerObj} key={retailerObj.id} />;
+           return (
+            <Retail 
+              retailer={retailerObj} 
+              key={retailerObj.id} 
+              passFunction={passFunction}  // Pass it down to each Retail component
+            />
+          );
         })}
       </article>
     </div>

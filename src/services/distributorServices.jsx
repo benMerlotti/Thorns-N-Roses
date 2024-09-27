@@ -7,3 +7,9 @@ export const getAllDistributorsNurseries = () => {
     "http://localhost:8088/distributorNurseries?_expand=distributor&_expand=nursery"
   ).then((res) => res.json());
 };
+
+export const getDistributorNurseriesByNurseryId = (distributorId) => {
+  return fetch (
+    `http://localhost:8088/distributorNurseries?distributorId=${distributorId}&_expand=distributor&_expand=nursery`
+  )
+}

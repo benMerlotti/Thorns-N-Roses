@@ -58,5 +58,14 @@
     {"id": 14, "name": "Nina", "businessName": "Blissful Bouquets", "email": "nina@example.com", "password": "hashedpassword"},
     {"id": 15, "name": "Oscar", "businessName": "Perfect Weddings", "email": "oscar@example.com", "password": "hashedpassword"},
     {"id": 16, "name": "simrath", "businessName": "simrathbusiness", "email": "srand1250@gmail.com", "password": "password"}
-  ]
+  ],
+    "carts": [
+      {"id": 1, "customerId": 1, "retailerId": 5, "flowerId": 10},
+      {"id": 2, "customerId": 2, "retailerId": 1, "flowerId": 2},
+      {"id": 3, "customerId": 3, "retailerId": 2, "flowerId": 8},
+      {"id": 4, "customerId": 4, "retailerId": 3, "flowerId": 5},
+      {"id": 5, "customerId": 5, "retailerId": 4, "flowerId": 15},
+      {"id": 6, "customerId": 6, "retailerId": 5, "flowerId": 19},
+      {"id": 7, "customerId": 7, "retailerId": 2, "flowerId": 16}
+    ]
 }

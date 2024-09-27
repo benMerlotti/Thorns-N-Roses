@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getAllDistributorsNurseries } from "../../services/distributorServices";
 import { getNurseryFlowers } from "../nurseries/NurseriesService";
 import "./Distributor.css";
-import { getAllRetailers } from "../../services/reatailerServices";
+import { getAllRetailers } from "../../services/retailerServices";
 
 export const Distributor = ({ distributor }) => {
   const [distributorNurseries, setDistributorNurseries] = useState([]);
