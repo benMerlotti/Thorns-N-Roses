@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getAllRetailers } from "../../services/reatailerServices";
 import { Retail } from "./Retailer";
 
-export const RetailerList = () => {
+export const RetailerList = ({ currentUser }) => {
   const [allRetailers, setAllRetailers] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,13 @@ export const RetailerList = () => {
       <h2>Retailers</h2>
       <article>
         {allRetailers.map((retailerObj) => {
-          return <Retail retailer={retailerObj} key={retailerObj.id} />;
+          return (
+            <Retail
+              currentUser={currentUser}
+              retailer={retailerObj}
+              key={retailerObj.id}
+            />
+          );
         })}
       </article>
     </div>

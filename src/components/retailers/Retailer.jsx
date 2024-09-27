@@ -5,8 +5,9 @@ import {
   getAllDistributorsNurseries,
   getAllDistributors,
 } from "../../services/distributorServices";
+import { addToShoppingCart } from "../../services/cartServices";
 
-export const Retail = ({ retailer }) => {
+export const Retail = ({ retailer, currentUser }) => {
   const [distributorNurseries, setDistributorNurseries] = useState([]);
   const [retailNurseries, setRetailNurseries] = useState([]);
   const [nurseryFlowers, setNurseryFlowers] = useState([]);
@@ -55,6 +56,20 @@ export const Retail = ({ retailer }) => {
     setRetailFlowers(matchNurseryIds);
   }, [nurseryFlowers, retailNurseries]);
 
+  const handleAddToCart = (retailFlowers) => {
+    const markupPrice = retailFlowers.price * retailer.markupPercentage;
+    const rounded = Number(markupPrice.toFixed(2));
+    const cart = {
+      id: "",
+      customerId: currentUser.id,
+      retailerId: retailer.id,
+      flowerId: retailFlowers.flowerId,
+      price: rounded,
+    };
+
+    addToShoppingCart(cart);
+  };
+
   return (
     <section className="retailer">
       <header className="retailer-name">{retailer.businessName}</header>
@@ -67,6 +82,12 @@ export const Retail = ({ retailer }) => {
               <div>Species: {rf.flower?.species}</div>
               <div>Color: {rf.flower?.color}</div>
               <div>Price: ${rounded}</div>
+              <button
+                onClick={() => handleAddToCart(rf)}
+                className="retail-btn"
+              >
+                Add to cart
+              </button>
             </div>
           );
         })}

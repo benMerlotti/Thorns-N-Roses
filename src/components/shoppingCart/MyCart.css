@@ -1,0 +1,46 @@
+.cart-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the cart */
+    border: 1px solid #ddd; /* Soft border for separation */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 400px;
+    margin: auto; /* Center the cart */
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-species {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .cart-color {
+    color: #777; /* Muted color for secondary info */
+  }
+  
+  .cart-quantity {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .cart-price {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Hover effect for cart items */
+  .cart-item:hover {
+    background-color: #f1f1f1;
+  }
+  
